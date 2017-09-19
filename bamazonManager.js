@@ -30,7 +30,8 @@ function runSearch() {
         "View Products for Sale",
         "View Low Inventory",
         "Add to Inventory",
-        "Add New Product"
+        "Add New Product",
+        "QUIT"
        
       ]
     })
@@ -51,6 +52,9 @@ function runSearch() {
         case "Add New Product":
           addProduct();
           break;
+        case "QUIT":
+          console.log("Good Bye")
+          break; 
         
       }
     });
@@ -298,4 +302,22 @@ function addProduct(){
     });
     // });
 }
+// function quit(){
+//   inquirer
+//     .prompt([
+//     { 
+//       name: "complete",
+//       type: "input",
+//       message: "Do yo want to Quit?"
+//       // choices: ["POST", "BID"]
+//     }
+//     ])
+//     .then(function(answer) {
+//       if(answer.complete === "Yes")
+//       {
+//         console.log("Goodbye")
+//       }
+
+//     })
+// }
 
